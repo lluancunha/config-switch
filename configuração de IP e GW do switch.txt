@@ -1,0 +1,21 @@
+!configuração de IP e GW do switch
+    enable
+    configure terminal
+
+!configurar o GW do switch
+    ip default-gateway 192.168.1.254 
+
+!configurar a Vlan 1
+    interface vlan 1
+
+!configurar a descrição da interface 
+    description interface de SVI do switch 
+
+!configurar o endereço IPv4
+    ip address 192.168.1.251 255.255.255.0
+
+!habilitar a interface SVI
+    no shutdown 
+    end
+    write
+    show running-config
