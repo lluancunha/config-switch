@@ -1,2 +1,2 @@
 # config-switch
-configuração básica de switch
+configuração de switch
